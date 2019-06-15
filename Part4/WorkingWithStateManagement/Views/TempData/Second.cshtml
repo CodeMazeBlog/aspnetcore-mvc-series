@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Second";
+    var userId = TempData["UserId"]?.ToString();
+    TempData.Keep();
+}
+
+<h1>Second</h1>
+
+User Id : @userId
+

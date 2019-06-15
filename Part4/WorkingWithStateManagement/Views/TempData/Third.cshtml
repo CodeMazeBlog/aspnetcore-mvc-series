@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Third";
+    //var userId = TempData["UserId"]?.ToString();
+    var userId = TempData.Peek("UserId")?.ToString();
+}
+
+<h1>Third</h1>
+User Id : @userId
+
+
+
