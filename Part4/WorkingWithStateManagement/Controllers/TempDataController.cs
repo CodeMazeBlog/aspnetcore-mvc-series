@@ -15,12 +15,14 @@ namespace WorkingWithStateManagement.Controllers
         }
 
         public IActionResult Second()
-        {            
+        {
+            var userId = TempData["UserId"] ?? null;
             return View();
         }
 
         public IActionResult Third()
-        { 
+        {
+            var userId = TempData["UserId"] ?? null;
             return View();
         }
     }
