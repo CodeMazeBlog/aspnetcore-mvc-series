@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace WorkingWithDI.Models
+namespace DependencyInjection.Models
 {
 	public class Book
 	{

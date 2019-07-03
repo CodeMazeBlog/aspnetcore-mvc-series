@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WorkingWithDI.Models.Services
+namespace DependencyInjection.Models.Services
 {
 	public class BooksLookupService
 	{

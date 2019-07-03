@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WorkingWithDI.Models;
-using WorkingWithDI.Models.DataManager;
-using WorkingWithDI.Models.Repository;
-using WorkingWithDI.Models.Services;
+using DependencyInjection.Models;
+using DependencyInjection.Models.DataManager;
+using DependencyInjection.Models.Repository;
+using DependencyInjection.Models.Services;
 
-namespace WorkingWithDI
+namespace DependencyInjection
 {
 	public class Startup
 	{

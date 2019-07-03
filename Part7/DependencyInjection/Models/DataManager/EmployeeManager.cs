@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using WorkingWithDI.Models.Repository;
+using DependencyInjection.Models.Repository;
 
-namespace WorkingWithDI.Models.DataManager
+namespace DependencyInjection.Models.DataManager
 {
 	public class EmployeeManager : IDataRepository<Employee>
 	{

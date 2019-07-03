@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WorkingWithDI.Models.Repository
+namespace DependencyInjection.Models.Repository
 {
 	public interface IDataRepository<TEntity>
 	{

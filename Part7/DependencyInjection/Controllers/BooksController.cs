@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WorkingWithDI.Controllers
+namespace DependencyInjection.Controllers
 {
 	public class BooksController : Controller
 	{

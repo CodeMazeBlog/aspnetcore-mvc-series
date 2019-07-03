@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using WorkingWithDI.Models;
-using WorkingWithDI.Models.Repository;
+using DependencyInjection.Models;
+using DependencyInjection.Models.Repository;
 
-namespace WorkingWithDI.Controllers
+namespace DependencyInjection.Controllers
 {
 	public class EmployeeController : Controller
 	{

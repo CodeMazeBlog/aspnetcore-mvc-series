@@ -1,4 +1,4 @@
-﻿namespace WorkingWithDI.Models
+﻿namespace DependencyInjection.Models
 {
 	public class Employee
 	{

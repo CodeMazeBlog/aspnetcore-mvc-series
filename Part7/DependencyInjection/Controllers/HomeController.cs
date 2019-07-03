@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WorkingWithDI.Models;
+using DependencyInjection.Models;
 
-namespace WorkingWithDI.Controllers
+namespace DependencyInjection.Controllers
 {
 	public class HomeController : Controller
 	{
