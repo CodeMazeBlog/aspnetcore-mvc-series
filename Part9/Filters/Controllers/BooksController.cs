@@ -18,7 +18,7 @@ namespace Filters.Controllers
 
 		[ValidateModel]
 		[HttpPost]
-		public IActionResult Create([FromBody]Book book)
+		public IActionResult Create([FromForm]Book book)
 		{
 			return View();
 		}
