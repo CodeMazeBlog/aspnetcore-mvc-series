@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BookStoreWithViews.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+    Book firstBook = Model.ToList().FirstOrDefault();
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label asp-for="@firstBook.Id"></label>
+            </th>
+            <th>
+                <label asp-for="@firstBook.Title"></label>
+            </th>
+            <th>
+                <label asp-for="@firstBook.Genre"></label>
+            </th>
+            <th>
+                <label asp-for="@firstBook.Price"></label>
+            </th>
+            <th>
+                <label asp-for="@firstBook.PublishDate"></label>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <label>@item.Id</label>
+                </td>
+                <td>                    
+                    <label>@item.Title</label>
+                </td>
+                <td>                    
+                    <label>@item.Genre</label>
+                </td>
+                <td>                    
+                    <label>@item.Price</label>
+                </td>
+                <td>                    
+                    <label>@item.PublishDate</label>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-ID="@item.Id">Edit</a>
+                    <a asp-action="Details" asp-route-ID="@item.Id">Details</a>
+                    <a asp-action="Delete" asp-route-ID="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
