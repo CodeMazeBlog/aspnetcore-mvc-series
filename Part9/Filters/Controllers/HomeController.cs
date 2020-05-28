@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Security.Claims;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Filters.Filters;
+using Microsoft.Extensions.Logging;
 using Filters.Models;
+using Filters.Filters;
+using System;
 
 namespace Filters.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -26,25 +31,6 @@ namespace Filters.Controllers
         public IActionResult Edit()
         {
             return View();
-        }
-
-        public IActionResult Login()
-        {
-            // Logic for authenticating the user goes here 
-
-            // Once the user is successfully authenticated as admin, 
-            // let's issue a claim of type = "Role" and value = "Admin" to the user
-
-            var claims = new List<Claim>()
-            {
-                new Claim("Role", "Admin")
-            };
-
-            ClaimsIdentity identity = new ClaimsIdentity(claims);
-
-            HttpContext.User.AddIdentity(identity);
-
-            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

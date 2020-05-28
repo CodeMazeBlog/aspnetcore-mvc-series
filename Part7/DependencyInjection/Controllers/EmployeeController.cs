@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using DependencyInjection.Models;
+﻿using System.Collections.Generic;
 using DependencyInjection.Models.Repository;
+using DependencyInjection.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DependencyInjection.Controllers
 {

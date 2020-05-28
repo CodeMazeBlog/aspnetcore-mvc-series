@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WorkingWithRouting.Controllers
+namespace Routing.Controllers
 {
     public class BlogController : Controller
     {
@@ -13,9 +13,9 @@ namespace WorkingWithRouting.Controllers
             return View();
         }
 
-        public IActionResult Article(int articleId)
+        public IActionResult Article(string article)
         {
-            return View(articleId);
+            return View("Article", article);
         }
     }
 }

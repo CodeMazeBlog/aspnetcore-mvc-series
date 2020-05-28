@@ -1,6 +1,6 @@
 using System;
 
-namespace WorkingWithRouting.Models
+namespace Routing.Models
 {
     public class ErrorViewModel
     {

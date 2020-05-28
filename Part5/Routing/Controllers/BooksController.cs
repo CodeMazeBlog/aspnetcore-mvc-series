@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WorkingWithRouting.Controllers
+namespace Routing.Controllers
 {
     public class BooksController : Controller
     {

@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using BookStoreWithData.Models;
 
-namespace BookStoreWithData.Models
+namespace BookStoreWithData.Data
 {
     public class BookStoreWithDataContext : DbContext
     {
-        public BookStoreWithDataContext(DbContextOptions<BookStoreWithDataContext> options)
+        public BookStoreWithDataContext (DbContextOptions<BookStoreWithDataContext> options)
             : base(options)
         {
         }

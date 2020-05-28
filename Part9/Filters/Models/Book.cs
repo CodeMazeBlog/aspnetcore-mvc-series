@@ -1,9 +1,12 @@
-﻿namespace Filters.Models
-{
-	public class Book
-	{
-		public long Id { get; set; }
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 
-		public string Name { get; set; }
-	}
+namespace Filters.Models
+{
+    public class Book
+    {
+        public long Id { get; set; }
+
+        public string Name { get; set; }
+    }
 }

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WorkingWithStateManagement.Models;
 
 namespace WorkingWithStateManagement.Controllers
 {

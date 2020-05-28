@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Filters.Filters;
+﻿using Filters.Filters;
 using Filters.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Filters.Controllers
 {
@@ -18,7 +18,7 @@ namespace Filters.Controllers
 
 		[ValidateModel]
 		[HttpPost]
-		public IActionResult Create([FromForm]Book book)
+		public IActionResult Create([FromBody]Book book)
 		{
 			return View();
 		}

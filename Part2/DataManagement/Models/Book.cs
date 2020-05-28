@@ -8,11 +8,11 @@ namespace BookStoreWithData.Models
         public int Id { get; set; }
 
         [Display(Name = "Book Title")]
-        [Required]        
+        [Required]
         public string Title { get; set; }
 
         public string Genre { get; set; }
-                
+
         [DataType(DataType.Currency)]
         [Range(1, 100)]
         public decimal Price { get; set; }

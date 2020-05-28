@@ -1,6 +1,6 @@
-﻿using System;
+﻿using DependencyInjection.Models.Repository;
+using System;
 using System.Collections.Generic;
-using DependencyInjection.Models.Repository;
 
 namespace DependencyInjection.Models.DataManager
 {

@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using Filters.Filters;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Filters.Controllers
 {
